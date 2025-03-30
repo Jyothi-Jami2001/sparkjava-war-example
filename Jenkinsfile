@@ -4,11 +4,6 @@ pipeline {
         PATH = "/opt/maven/bin:$PATH"
     }
     stages {
-        stage('git clone') {
-            steps {
-                git url: 'https://github.com/Jyothi-Jami2001/sparkjava-war-example.git', branch: 'master'
-            }
-        }
         stage('build')
         {
             steps {
